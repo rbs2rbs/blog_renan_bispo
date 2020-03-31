@@ -226,23 +226,22 @@
 									</div>
 									<!-- END -->
 								</div>
-								</div>
+							</div>
+						</div>
 							{% endfor %}
 					  	<div class="row">
 							{% for s in secundaria %}
 								<div class="col-md-6 animate-box">
-										<div class="progress-wrap ftco-animate">
-											<h3>{{ s.habilidade }}</h3>
-											<div class="progress">
-												<div class="progress-bar color-1" role="progressbar" aria-valuenow="{{ s.habilidade_habilidade }}"
-												aria-valuemin="0" aria-valuemax="100" style="width:90%">
-												<span>{{ s.nivel_habilidade }}%</span>
-												</div>
+									<div class="progress-wrap ftco-animate fadeInUp ftco-animated">
+										<h3>{{ s.habilidade }}</h3>
+										<div class="progress">
+											<div class="progress-bar color-6" role="progressbar" aria-valuenow="{{ s.nivel_habilidade }}" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+											<span>{{ s.nivel_habilidade }}%</span>
 											</div>
 										</div>
 									</div>
+								</div>
 							{% endfor %}
-								
 					  	</div>
 					  </div>
 					  <!-- <div id="page-4" class= "page four">
