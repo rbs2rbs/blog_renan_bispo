@@ -1,0 +1,12 @@
+Django
+psycopg2
+django-heroku
+Pillow
+whitenoise
+djangorestframework
+psycopg2-binary
+gunicorn
+asgiref
+dj-database-url
+sqlparse
+pytz
