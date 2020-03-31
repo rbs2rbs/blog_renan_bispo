@@ -494,7 +494,7 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Cases</h1>
             <h2 class="mb-4">Meus Cases</h2>
-            <p>Meu trabalhos realizados mais importantes</p>
+            <p>Meus trabalhos realizados mais importantes</p>
           </div>
         </div>
         <div class="row d-flex">
@@ -507,8 +507,8 @@
 						<h3 class="heading"><a href="{{ c.url }}">{{ c.titulo }}</a></h3>
 						<div class="d-flex align-items-center mb-3 meta">
 							<p class="mb-0">
-								<!-- <span class="mr-2">{{ s.data_criado|date:"M d, Y" }}</span> -->
-								<a href="#" class="mr-2">{% for p in perfil %}{{ p.nome }} {{ p.segundo_nome }}{% endfor %}</a>
+								<span class="mr-2">{{ c.data_criado|date:"m/d/Y" }}</span><br>
+								<span ><a href="#" class="mr-2">{% for p in perfil %}{{ p.nome }} {{ p.segundo_nome }}{% endfor %}</a></span>
 								<!-- <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a> -->
 							</p>
 						</div>
