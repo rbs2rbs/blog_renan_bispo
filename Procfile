@@ -1,2 +1,2 @@
 
-web: gunicorn app_centro_nutricao.wsgi
+web: gunicorn blog.wsgi
