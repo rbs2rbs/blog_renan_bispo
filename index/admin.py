@@ -14,6 +14,9 @@ class PerfilAdmin(admin.ModelAdmin):
         'telefone',
         'curriculo', 
         'foto_perfil',
+        'linkedin',
+        'github',
+        'instagram'
         )
 
 

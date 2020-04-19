@@ -18,6 +18,9 @@ class Perfil(models.Model):
     curriculo_base = models.TextField(max_length=999999,null=True, blank=True)
     foto_perfil = models.ImageField()
     foto_perfil_base = models.TextField(max_length=999999,null=True, blank=True)
+    linkedin = models.URLField(verbose_name="Link do Linkedin",null=True, blank=True)
+    github = models.URLField(verbose_name="Link do Github",null=True, blank=True)
+    instagram = models.URLField(verbose_name="Link do Instagram",null=True, blank=True)
 
     def __str__(self):
         return self.nome
