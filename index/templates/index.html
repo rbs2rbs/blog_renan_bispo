@@ -52,18 +52,17 @@
         <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
           <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
           	<div class="text text-center">
-				  <span class="subheading">Eu sou</span>
-					{% for s in perfil %}
-				  		<h1>{{ s.nome }} {{ s.segundo_nome }}</h1>
-					
-			  				<h2>Sou 
-								  <span
-								     class="txt-rotate"
-								     data-period="2000"
-								     data-rotate='["{{ s.sou_1 }}","{{ s.sou_2 }}","{{ s.sou_3 }}"]'></span>
-								</h2>
-							</div>
-					{% endfor %}
+				  <!-- <span class="subheading">Eu sou</span> -->
+				{% for s in perfil %}
+					<h1>{{ s.nome }} {{ s.segundo_nome }}</h1>
+					<h2>Sou 
+							<span
+								class="txt-rotate"
+								data-period="2000"
+								data-rotate='["{{ s.sou_1 }}","{{ s.sou_2 }}","{{ s.sou_3 }}"]'></span>
+						</h2>
+					</div>
+				{% endfor %}
             </div>
           </div>
         </div>
@@ -128,8 +127,8 @@
 		<div class="container">
 		  <div class="row justify-content-center mb-5 pb-5">
 			<div class="col-md-7 heading-section text-center ftco-animate">
-			  <h1 class="big big-2">Cases</h1>
-			  <h2 class="mb-4">Meus Cases</h2>
+			  <h1 class="big big-2">Trabalhos</h1>
+			  <h2 class="mb-4">Meus Trabalhos</h2>
 			  <p>Meus trabalhos realizados mais importantes</p>
 			</div>
 		  </div>
@@ -137,26 +136,24 @@
 			  {% for c in case %}
 				  <div class="col-md-4 d-flex ftco-animate">
 					  <div class="blog-entry justify-content-end">
-						  <a href="{{ c.url }}" class="block-20" style='background-image: url("data:image/png;base64,{{ c.fimagem_base }}");'>
-					  </a>
+						  <a href="{{ c.url }}" class="block-20" style='background-image: url("data:image/png;base64,{{ c.fimagem_base }}");'></a>
 					  <div class="text mt-3 float-right d-block">
 						  <h3 class="heading"><a href="{{ c.url }}">{{ c.titulo }}</a></h3>
 						  <div class="d-flex align-items-center mb-3 meta">
 							  <p class="mb-0">
-								  <span class="mr-2">{{ c.data_criado|date:"m/d/Y" }}</span><br>
+								  <span class="mr-2">{{ c.data_criado|date:"d/m/Y" }}</span><br>
 								  <span ><a href="#" class="mr-2">{% for p in perfil %}{{ p.nome }} {{ p.segundo_nome }}{% endfor %}</a></span>
 								  <!-- <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a> -->
 							  </p>
 						  </div>
 						  <p>{{ c.resumo }}</p>
 					  </div>
-					  </div>
+					</div>
 				  </div>
 			  {% endfor %}
 		  </div>
 		</div>
 	  </section>
-
     <!-- <section class="ftco-section ftco-partner">
     	<div class="container">
     		<div class="row">
@@ -185,7 +182,7 @@
     			<div class="col-md-3">
 				    <nav id="navi">
 					    <ul>
-					      <li><a href="#page-1">Educação</a></li>
+					      <li><a href="#page-1">Formação</a></li>
 					      <li><a href="#page-2">Experiencia</a></li>
 					      <li><a href="#page-3">Habilidades</a></li>
 					      <!-- <li><a href="#page-4">Awards</a></li> -->
@@ -194,7 +191,7 @@
 					</div>
 					<div class="col-md-9">
 					  <div id="page-1" class= "page one">
-						  <h2 class="heading">Educação</h2>
+						  <h2 class="heading">Formação</h2>
 							{% for e in educacao %}
 								<div class="resume-wrap d-flex ftco-animate">
 									<div class="icon d-flex align-items-center justify-content-center">
