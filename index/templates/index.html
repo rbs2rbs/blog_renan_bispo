@@ -183,12 +183,12 @@
 					    	<div class="icon d-flex align-items-center justify-content-center">
 					    		<span class="flaticon-ideas"></span>
 							</div>
-							{% for e in experiencia %}
+							{% for exp in experiencia %}
 								<div class="text pl-3">
-									<span class="date">{{ e.periodo }}</span>
-									<h2>{{ e.titulo }}</h2>
-									<span class="position">{{ e.local }}</span>
-									<p>{{ e.descricao }}</p>
+									<span class="date">{{ exp.periodo }}</span>
+									<h2>{{ exp.titulo }}</h2>
+									<span class="position">{{ exp.local }}</span>
+									<p>{{ exp.descricao }}</p>
 								</div>
 							{% endfor %}
 	    				</div>
