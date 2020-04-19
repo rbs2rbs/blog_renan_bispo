@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from index.models import Perfil, Educacao, Habilidade, Case
+from index.models import Perfil, Educacao, Habilidade, Case,Experiencia
 
 def home(request):
 
