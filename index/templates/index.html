@@ -99,7 +99,7 @@
 		            	<li class="d-flex"><span>Cidade:</span> <span>{% for s in perfil %}{{ s.cidade }}{% endfor %}</span></li>
 		            	<!-- <li class="d-flex"><span>Zip code:</span> <span>1000</span></li> -->
 		            	<li class="d-flex" style="overflow-wrap: break-word;"><span>Email:</span> <span>{% for s in perfil %}{{ s.email }}{% endfor %}</span></li>
-		            	<li class="d-flex" style="overflow-wrap: break-word;"><a target="_blank"  href="https://wa.me/{{ s.telefone }}"><span>Whatsapp: </span> <span>{% for s in perfil %}{{ s.telefone }}{% endfor %}</span></a></li>
+		            	<li class="d-flex" style="overflow-wrap: break-word;">{% for s in perfil %}<a target="_blank"  href="https://wa.me/{{ s.telefone }}"><span>Whatsapp: </span> <span>{{ s.telefone }}{% endfor %}</span></a></li>
 		            </ul>
 		          </div>
 		        </div>
