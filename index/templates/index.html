@@ -4,8 +4,18 @@
   <head>
     <title>{% for s in perfil %} {{ s.nome }} {{ s.segundo_nome }} - {{ s.sou_1 }} {% endfor %}</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<meta name="Renan Bispo" content="title goes here">
+    <meta name="twitter:title" content="Portfolio de Renan Bispo">
+    <meta name="twitter:description" content="Cientista de dados e programador">
+    <meta name="twitter:image" content="https://viacarreira.com/wp-content/uploads/2020/02/cientista-de-dados-o-que-faz-salario-e-onde-estudar.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="Recomendação Spotify">
+    <meta property="og:description" content=" Cientista de dados e programador">
+    <meta property="og:image" content="https://viacarreira.com/wp-content/uploads/2020/02/cientista-de-dados-o-que-faz-salario-e-onde-estudar.jpeg">
+	<meta property="og:url" content="http://renanbispo.com.br">
+	
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
@@ -99,7 +109,7 @@
 		            	<li class="d-flex"><span>Cidade:</span> <span>{% for s in perfil %}{{ s.cidade }}{% endfor %}</span></li>
 		            	<!-- <li class="d-flex"><span>Zip code:</span> <span>1000</span></li> -->
 		            	<li class="d-flex" style="overflow-wrap: break-word;"><span>Email:</span> <span>{% for s in perfil %}{{ s.email }}{% endfor %}</span></li>
-		            	<li class="d-flex" style="overflow-wrap: break-word;">{% for s in perfil %}<a target="_blank"  href="https://wa.me/{{ s.telefone }}"><span>Whatsapp: </span> <span>{{ s.telefone }}{% endfor %}</span></a></li>
+		            	<li class="d-flex" style="overflow-wrap: break-word;">{% for s in perfil %}<a target="_blank"  href="https://wa.me/+55{{ s.telefone }}"><span>Whatsapp: </span> <span>{{ s.telefone }}{% endfor %}</span></a></li>
 		            </ul>
 		          </div>
 		        </div>
